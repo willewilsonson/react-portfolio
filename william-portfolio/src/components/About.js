@@ -1,8 +1,8 @@
 import './About.css';
 
-const About = () => {
+const About = ({height}) => {
     return(
-        <section className="about height">
+        <section className="about" style={{height: height + 'px'}}>
             <img src="" alt="" className="about__image" />
             <h1 className="about__title">About me</h1>
             <nav className="about__about-navbar">

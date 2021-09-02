@@ -1,9 +1,10 @@
 import './Header.css';
 import profileImage from '../william_profile_image.png';
 
-const Header = () => {
+const Header = ({height}) => {
+
     return (
-        <header className="header height">
+        <header className="header" style={{height: (height - 100) + 'px'}}>
             <img src={profileImage} alt="" className="header__profile-image"></img>
             <h3 className="header__greeting">Hello</h3>
             <h1 className="header__name">I'm William</h1>
