@@ -1,0 +1,36 @@
+.about__title {
+    text-align: center;
+}
+
+.about__about-navbar {
+
+}
+
+.about-navbar__content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-navbar__element {
+    width: 100%;
+}
+
+.about-navbar__button {
+
+}
+
+.about__info {
+    display: none;
+}
+
+.active {
+    display: contents;
+}
+
+.display {
+    display: contents;
+}
