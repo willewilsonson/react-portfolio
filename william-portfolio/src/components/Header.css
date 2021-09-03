@@ -7,27 +7,38 @@
 }
 
 .header__profile-image {
-    margin: auto;
+    margin: 20px auto;
     border-radius: 100%;
     height: 280;
     width: 280px;
     border: 1px solid var(--yellow);
-    box-shadow: 2px 2px 2px 2px var(--dark);
+    /* box-shadow: 2px 2px 2px 2px var(--dark); */
     /* animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite; */
 }
 
-.header__greeting {
-    margin-left: 10px;
+.header__greeting, .header__name, .header__description {
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
-.header__name {
-    margin-left: 50px;
+.header__profile-image {
+    animation: blink-animation 4s steps(30, start) infinite;
+    /* -webkit-animation: blink-animation 0.1s steps(30, start) infinite; */
+
 }
 
-.header__description {
-    margin-left: 50px;
+@keyframes blink-animation {
+    0% {
+      box-shadow: 0px 1px 10px 0px var(--light);
+    }
+    50% {
+    box-shadow: 0px 1px 50px 1px var(--light);
+    }
+    100% {
+        box-shadow: 0px 1px 10px 0px var(--light);
+    }
 }
 
 .header__contact-button {
