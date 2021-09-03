@@ -10,7 +10,7 @@ const About = ({height}) => {
         <section className="about" style={{height: height + 'px'}}>
             <img src="" alt="" className="about__image" />
             <h1 className="about__title">About me</h1>
-            <AboutNavbar setDisplay={setDisplay}/>
+            <AboutNavbar display={display} setDisplay={setDisplay}/>
             <AboutInfo display={display}/>
         </section>
     )
