@@ -1,5 +1,7 @@
 import './Skills.css';
 import FrontEnd from './skills/FrontEnd';
+import BackEnd from './skills/BackEnd';
+import Languages from './skills/Languages';
 
 const SkillsInfo = ({displaySkills}) => {
 
@@ -14,10 +16,10 @@ const SkillsInfo = ({displaySkills}) => {
             return <FrontEnd createDots={createDots}/>;
         }
         if(displaySkills === 'back-end') {
-            return <p>backend</p>;
+            return <BackEnd createDots={createDots}/>;
         }
-        if(displaySkills === 'oevrigt') {
-            return <p>övrigt</p>;
+        if(displaySkills === 'languages') {
+            return <Languages createDots={createDots}/>;
         }
     };
 

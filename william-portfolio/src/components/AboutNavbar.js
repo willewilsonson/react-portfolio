@@ -4,7 +4,7 @@ const AboutNavbar = ({display, setDisplay}) => {
 
     const isActive = (id) => {
         if (display === id) {
-            return ' active';
+            return ' activeAbout';
         }
         return '';
     };

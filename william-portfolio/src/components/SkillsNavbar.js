@@ -4,7 +4,7 @@ const SkillsNavbar = ({displaySkills, setDisplaySkills}) => {
 
     const isActiveSkill = (id) => {
         if (displaySkills === id) {
-            return ' active';
+            return ' activeSkill';
         }
         return '';
     };
@@ -12,19 +12,19 @@ const SkillsNavbar = ({displaySkills, setDisplaySkills}) => {
     return (
         <nav className="skills__skills-navbar">
         <ul className="skills-navbar__content">
-            <li className="skills-navbar__element">
-                <button className={`skills-navbar__button${isActiveSkill('front-end')}`} id="front-end"
+            <li className={`skills-navbar__element${isActiveSkill('front-end')}`}>
+                <button className='skills-navbar__button' id="front-end"
                 onClick={() => setDisplaySkills('front-end')}
                 >Front-end</button>
             </li>
-            <li className="skills-navbar__element">
-                <button className={`skills-navbar__button${isActiveSkill('back-end')}`} id="back-end"
+            <li className={`skills-navbar__element${isActiveSkill('back-end')}`}>
+                <button className='skills-navbar__button' id="back-end"
                 onClick={() => setDisplaySkills('back-end')}
                 >Back-end</button>
             </li>
-            <li className="skills-navbar__element">
-            <button className={`skills-navbar__button${isActiveSkill('oevrigt')}`} id="oevrigt"
-                onClick={() => setDisplaySkills('oevrigt')}
+            <li className={`skills-navbar__element${isActiveSkill('languages')}`}>
+                <button className='skills-navbar__button' id="languages"
+                onClick={() => setDisplaySkills('languages')}
                 >Övrigt</button>
             </li>
         </ul>
