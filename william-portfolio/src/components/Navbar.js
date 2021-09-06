@@ -25,7 +25,9 @@ const Navbar = ({height}) => {
                 >SKILLS</button>
             </li>
             <li className="navbar__element-left">
-                <button className="navbar__button" id="portfolio">PORTFOLIO</button>
+                <button className="navbar__button" id="portfolio"
+                onClick={() => setActive(3)}
+                >PORTFOLIO</button>
             </li>
             <li className="navbar__element-left">
                 <button className="navbar__button" id="contact">CONTACT</button>
