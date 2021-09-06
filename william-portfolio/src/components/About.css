@@ -25,6 +25,7 @@
 .about-navbar__element {
     width: 100%;
     background: var(--light);
+    border-bottom: 2px solid transparent;
 }
 
 .about-navbar__button {
@@ -32,10 +33,7 @@
     font-size: 20px;
     background: transparent;
     height: 100%;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 3px solid transparent;
+    border: none;
 }
 
 .about__info {
@@ -53,11 +51,11 @@
 
 .active {
     animation: blink .5s step-end infinite alternate;
-
+    background: transparent;
 }
   
 @keyframes blink { 
-    50% { border-color: blue; } 
+    50% { border-bottom-color: blue; }
 } 
 
 
