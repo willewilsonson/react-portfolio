@@ -1,8 +1,7 @@
 .about {
     background: var(--dark);
     opacity: 0.7;
-    border-right: 10px solid black;
-    border-left: 10px solid black;
+    margin: 0 10px;
     border-radius: 10px;
 }
 
@@ -11,7 +10,7 @@
 }
 
 .about__about-navbar {
-
+    margin: 0 10px;
 }
 
 .about-navbar__content {
@@ -25,9 +24,18 @@
 
 .about-navbar__element {
     width: 100%;
+    background: var(--light);
 }
 
 .about-navbar__button {
+    color: #fff;
+    font-size: 20px;
+    background: transparent;
+    height: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid transparent;
 }
 
 .about__info {
@@ -44,22 +52,14 @@
 }
 
 .active {
-    display: contents;
-    animation: blink-animation 4s steps(30, start) infinite;
+    animation: blink .5s step-end infinite alternate;
 
 }
+  
+@keyframes blink { 
+    50% { border-color: blue; } 
+} 
 
-@keyframes blink-animation {
-    0% {
-      box-shadow: 0px 1px 10px 0px var(--light);
-    }
-    50% {
-        box-shadow: 0px 1px 50px 1px var(--light);
-    }
-    100% {
-        box-shadow: 0px 1px 10px 0px var(--light);
-    }
-}
 
 .display {
     display: contents;

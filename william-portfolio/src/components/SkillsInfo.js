@@ -1,6 +1,7 @@
 import './Skills.css';
+import FrontEnd from './skills/FrontEnd';
 
-const SkillsInfo = () => {
+const SkillsInfo = ({displaySkills}) => {
 
     const createDots = (number) => {
         const dots = ['0', '1', '2'];
@@ -8,32 +9,23 @@ const SkillsInfo = () => {
         return dots.map((dot, i) => <div key={i} className={`circle-${dot} ${number > dot ? 'blue' : 'grey'}`}></div>);
     }
 
+    const contentToDisplay = () => {
+        if(displaySkills === 'front-end') {
+            return <FrontEnd createDots={createDots}/>;
+        }
+        if(displaySkills === 'back-end') {
+            return <p>backend</p>;
+        }
+        if(displaySkills === 'oevrigt') {
+            return <p>övrigt</p>;
+        }
+    };
+
+
     return (
-        <ul className="skills__ul">
-                <li className="skills__li">
-                    <h2 className="skills__h2">Front-end JavaScript</h2>
-                </li>
-                <li className="skills__li">
-                    <h3 className="skills__h3">REACT</h3>
-                    {createDots(3)}
-                </li>
-                <li className="skills__li">
-                    <h3 className="skills__h3">CSS(BEM)</h3>
-                    {createDots(3)}
-                </li>
-                <li className="skills__li">
-                    <h3 className="skills__h3">REDUX</h3>
-                    {createDots(2)}
-                </li>
-                <li className="skills__li">
-                    <h3 className="skills__h3">DOM-MANIPULATION</h3>
-                    {createDots(2)}
-                </li>
-                <li className="skills__li">
-                    <h3 className="skills__h3">GATSBY</h3>
-                    {createDots(1)}
-                </li>
-            </ul>
+        <div>
+       { contentToDisplay() }
+        </div>
     )
 };
 
