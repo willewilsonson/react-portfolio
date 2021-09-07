@@ -6,6 +6,7 @@ import NavLinks from './components/NavLinks';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import ContactForm from './components/ContactForm';
 
 // const height = window.screen.height - 100
 
@@ -25,6 +26,7 @@ const App = () => {
         <About height={height}/>
         <Skills height={height}/>
         <Projects height={height}/>
+        <ContactForm />
       </section>
     </div>
   );
