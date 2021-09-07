@@ -5,7 +5,7 @@ import Header from './components/Header';
 import NavLinks from './components/NavLinks';
 import About from './components/About';
 import Skills from './components/Skills';
-import Portfolio from './components/Portfolio';
+import Projects from './components/Projects';
 
 // const height = window.screen.height - 100
 
@@ -24,7 +24,7 @@ const App = () => {
         <NavLinks />
         <About height={height}/>
         <Skills height={height}/>
-        <Portfolio height={height}/>
+        <Projects height={height}/>
       </section>
     </div>
   );

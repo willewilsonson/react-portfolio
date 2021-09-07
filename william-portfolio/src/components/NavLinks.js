@@ -9,23 +9,23 @@ const NavLinks = () => {
     return (
     <nav className="nav-links">
         <div className="nav-links__link-container">
-            <a href="mailto: william.nordenstad@gmail.com" target="_blank">
-                <img src={gmailLogo} className="nav-links__logo"></img>
+            <a href="mailto: william.nordenstad@gmail.com" target="_blank" rel="noreferrer">
+                <img src={gmailLogo} className="nav-links__logo" id="gmailLogo" alt="gmail logo"></img>
             </a>
         </div>
         <div className="nav-links__link-container">
-            <a href="https://github.com/willewilsonson" target="_blank">
-                <img src={githubLogo} className="nav-links__logo"></img>
+            <a href="https://github.com/willewilsonson" target="_blank" rel="noreferrer">
+                <img src={githubLogo} className="nav-links__logo" alt="github logo"></img>
             </a>
         </div>
         <div className="nav-links__link-container">
-            <a href="https://www.linkedin.com/in/williamnordenstad/" target="_blank">
-                <img src={linkedInLogo} className="nav-links__logo"></img>
+            <a href="https://www.linkedin.com/in/williamnordenstad/" target="_blank" rel="noreferrer">
+                <img src={linkedInLogo} className="nav-links__logo" id="linkedInLogo" alt="linkedIn logo"></img>
             </a>
         </div>
         <div className="nav-links__link-container">
-            <a href="https://www.facebook.com/william.nordenstad/" target="_blank">
-                <img src={facebookLogo} className="nav-links__logo"></img>
+            <a href="https://www.facebook.com/william.nordenstad/" target="_blank" rel="noreferrer">
+                <img src={facebookLogo} className="nav-links__logo" alt="facebook logo"></img>
             </a>
         </div>
     </nav>

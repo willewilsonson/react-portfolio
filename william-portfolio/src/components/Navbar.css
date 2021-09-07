@@ -16,6 +16,7 @@
     padding: 40px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     color: var(--pink);
     list-style-type: none;
 }

@@ -25,7 +25,7 @@ const SkillsNavbar = ({displaySkills, setDisplaySkills}) => {
             <li className={`skills-navbar__element${isActiveSkill('languages')}`}>
                 <button className='skills-navbar__button' id="languages"
                 onClick={() => setDisplaySkills('languages')}
-                >Övrigt</button>
+                >Languages</button>
             </li>
         </ul>
     </nav>
