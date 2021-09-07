@@ -12,6 +12,7 @@
   
   .nav-links__link-container {
     width: 100%;
+    margin: -5px;
   }
   
   .nav-links__logo {
