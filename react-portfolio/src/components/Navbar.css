@@ -1,0 +1,36 @@
+.navbar {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: var(--dark);
+    box-shadow: 0px 0px 26px -7px black;
+    z-index: 999;
+}
+
+.navbar__container {
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--pink);
+    list-style-type: none;
+}
+
+.navbar__element-left {
+    text-align: center;
+    width: 25%;
+}
+
+.navbar__element-right {
+    display: none;
+}
+
+.navbar__button {
+    background: transparent;
+    color: var(--pink);
+}
