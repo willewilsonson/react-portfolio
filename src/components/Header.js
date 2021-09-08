@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './Header.css';
 import profileImage from '../william_profile_image.png';
 import wnLogo from '../wn_logo.png';
