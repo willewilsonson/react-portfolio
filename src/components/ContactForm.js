@@ -5,7 +5,7 @@ const ContactForm = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
+        console.log(process.env.REACT_APP_SERVICE, process.env.TEMPLATE, process.env.REACT_APP_USER);
         emailjs.sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, e.target, process.env.REACT_APP_USER)
           .then((result) => {
               console.log(result.text);
