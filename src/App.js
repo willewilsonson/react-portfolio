@@ -22,7 +22,7 @@ const App = () => {
       <section className="app__section">
         <Navbar height={height}/>
         <Header height={height}/>
-        <NavLinks />
+        {/* <NavLinks /> */}
         <About height={height}/>
         <Skills height={height}/>
         <Projects height={height}/>
