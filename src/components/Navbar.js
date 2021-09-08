@@ -28,20 +28,12 @@ const Navbar = ({height}) => {
             </li>
             <li className="navbar__element-left">
                 <button className="navbar__button" id="portfolio"
-                onClick={() => setActive([3, 29])}
+                onClick={() => setActive([3, 0])}
                 >PROJECTS</button>
             </li>
             <li className="navbar__element-left">
                 <button className="navbar__button" id="contact">CONTACT</button>
             </li>
-            <li className="navbar__element-left">
-                <button className="navbar__button" id="portfolio"
-                onClick={() => window.location.reload()}
-                >fit to screen</button>
-            </li>
-            <li className="navbar__element-right">FB</li>
-            <li className="navbar__element-right">LI</li>
-            <li className="navbar__element-right">GH</li>
         </ul>
     </nav>
     )   

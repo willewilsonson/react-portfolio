@@ -11,10 +11,10 @@ import ContactForm from './components/ContactForm';
 // const height = window.screen.height - 100
 
 const App = () => {
-  const[height, setHeight] = useState(window.screen.height);
+  const[height, setHeight] = useState(window.screen.height - 150);
 
   window.addEventListener('resize', () => {
-    setHeight(window.screen.height - 100)
+    setHeight(window.screen.height - 150)
   })
 
   return (

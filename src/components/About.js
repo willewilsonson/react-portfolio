@@ -7,7 +7,7 @@ const About = ({height}) => {
     const[display, setDisplay] = useState('life');
 
     return(
-        <section className="about" style={{height: height + 'px'}}>
+        <section className="about" style={{height: height + 44 + 'px'}}>
             <img src="" alt="" className="about__image" />
             <h1 className="about__title">About me</h1>
             <AboutNavbar display={display} setDisplay={setDisplay}/>

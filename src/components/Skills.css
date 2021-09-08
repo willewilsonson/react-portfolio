@@ -1,7 +1,7 @@
 .skills {
     border-top: 3px solid var(--black);
     position: sticky;
-    top: -6;
+    top: -3px;
     background-image: var(--background-url);
     background-repeat: no-repeat;
     background-attachment: fixed;

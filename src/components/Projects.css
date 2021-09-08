@@ -25,7 +25,8 @@
 }
 
 .projects__button--left, .projects__button--right {
-
+    width: 20px;
+    height: 250px;
 }
 
 .show-button {

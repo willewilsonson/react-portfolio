@@ -2,10 +2,11 @@
     position: fixed;
     justify-content: center;
     align-items: center;
+    left: 10px;
+    right: 10px;
     bottom: 0px;
     height: 100px;
-    width: 100%;
-    background-color: var(--dark);
+    background-color: var(--black);
     /* box-shadow: 0px 0px 26px -7px black; */
     z-index: 999;
 }
@@ -17,7 +18,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: var(--pink);
+    color: #fff;
     list-style-type: none;
 }
 
@@ -31,6 +32,9 @@
 }
 
 .navbar__button {
-    background: transparent;
-    color: var(--pink);
+    background: #fff;
+    border: none;
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    color: var(--black);
 }
