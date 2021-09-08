@@ -1,21 +1,35 @@
+import React, { useState } from 'react';
 import './Projects.css';
-import todoImage from "../project_todo_image.png";
+import Card from './Card';
+
 
 const Projects = ({height}) => {
+    const[activeCard, setActiveCard] = useState(1);
+
+    if (activeCard === 0) {
+        setActiveCard(2);
+    }
+    if (activeCard  === 3) {
+        setActiveCard(1);
+    }
+
+    console.log('activecard ', activeCard);
+
 
     return (
-        <section className="projects">
+        <section className="projects" style={{height: height + 'px'}}>
             <h1 className="projects__title">Projects</h1>
-            <article className="projects__card-wrapper">
-                <div className="card-wrapper__card">
-                    <img className="card__image" src={todoImage} alt="project_todo_image"></img>
-                    <footer className="card__card-footer">
-                        <a href="https://github.com/willewilsonson/todo" target="_blank" rel="noreferrer" className="card-footer__link">Code</a>
-                        <a href="https://willewilsonson.github.io/todo/" target="_blank" rel="noreferrer" className="card-footer__link">Demo</a>
-                    </footer>
-                </div>
-                <div className="card-wrapper__card"></div>
-            </article>
+            <div className="projects__wrap">
+                <button className={"projects__button--left"}
+                    onClick={() => setActiveCard(activeCard - 1)}
+                    >&#60;
+                </button>
+                <Card activeCard={activeCard} />
+                <button className={"projects__button--right"}
+                    onClick={() => setActiveCard(activeCard + 1)}
+                    >&#62;
+                </button>
+            </div>
         </section>
     )
 }
