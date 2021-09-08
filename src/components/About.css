@@ -1,9 +1,15 @@
 .about {
-    background: var(--dark);
-    opacity: 0.7;
+    border: 3px solid var(--black);
+    position: sticky;
+    top: 0;
+    /* background: var(--dark); */
+    background-image: var(--background-url);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    /* opacity: 0.7; */
     margin: 0 10px;
-    box-shadow: 10px 7px 26px -4px;
-    margin-bottom: 10px;
+    /* box-shadow: 10px 7px 26px -4px; */
 }
 
 .about__title {
@@ -27,7 +33,7 @@
 .about-navbar__element {
     width: 100%;
     border-bottom: 2px solid transparent;
-    background: var(--light);
+    background: var(--black);
 }
 
 /* .about-navbar__element:first-child {
@@ -62,6 +68,10 @@
 .activeAbout {
     animation: blink .5s step-end infinite alternate;
     background: transparent;
+}
+
+.activeAbout button {
+    color: var(--black);
 }
   
 @keyframes blink { 

@@ -9,7 +9,7 @@ const NavLinks = () => {
     return (
     <nav className="nav-links">
         <div className="nav-links__link-container">
-            <a href="mailto: william.nordenstad@gmail.com" target="_blank" rel="noreferrer">
+            <a href="mailto: info.williamnordenstad@gmail.com" target="_blank" rel="noreferrer">
                 <img src={gmailLogo} className="nav-links__logo" id="gmailLogo" alt="gmail logo"></img>
             </a>
         </div>

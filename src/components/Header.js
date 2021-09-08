@@ -1,11 +1,22 @@
+import React, { useState } from 'react';
 import './Header.css';
 import profileImage from '../william_profile_image.png';
+import wnLogo from '../wn_logo.png';
 
 const Header = ({height}) => {
+    const[toTop, setToTop] = useState(0);
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY < height - 100)
+            setToTop(window.scrollY)
+    });
 
     return (
         <header className="header" style={{height: (height - 150) + 'px'}}>
-            <img src={profileImage} alt="" className="header__profile-image"></img>
+            <div className="header__images">
+                <img src={wnLogo} alt="" className="header__logo"></img>
+                <img src={profileImage} alt="" className="header__profile-image"></img>
+            </div>
             <h3 className="header__greeting">Hello</h3>
             <h1 className="header__name">I'm William</h1>
             <h3 className="header__description">A fullstack JavaScript developer</h3>

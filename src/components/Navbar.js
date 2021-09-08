@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import wnLogo from '../wn_logo.png';
 
 const Navbar = ({height}) => {
     const[active, setActive] = useState([0, 0]);
@@ -14,21 +15,21 @@ const Navbar = ({height}) => {
             <li className="navbar__element-left">
                 <button className="navbar__button" id="top"
                 onClick={() => setActive([0, 0])}
-                >TOP</button>
+                ><img src={wnLogo}></img></button>
             </li>
             <li className="navbar__element-left">
                 <button className="navbar__button" id="about"
-                onClick={() => setActive([1, 0])}
+                onClick={() => setActive([1, 3])}
                 >ABOUT</button>
             </li>
             <li className="navbar__element-left">
                 <button className="navbar__button" id="skills"
-                onClick={() => setActive([2, 10])}
+                onClick={() => setActive([2, 16])}
                 >SKILLS</button>
             </li>
             <li className="navbar__element-left">
                 <button className="navbar__button" id="portfolio"
-                onClick={() => setActive([3, 20])}
+                onClick={() => setActive([3, 29])}
                 >PROJECTS</button>
             </li>
             <li className="navbar__element-left">

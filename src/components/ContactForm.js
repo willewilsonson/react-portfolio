@@ -11,7 +11,7 @@ const ContactForm = () => {
           }, (error) => {
               console.log(error.text);
           });
-        // e.target.reset();
+        e.target.reset();
       }
 
 

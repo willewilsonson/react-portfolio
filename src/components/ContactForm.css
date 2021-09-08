@@ -1,3 +1,13 @@
+.contact {
+    border-top: 3px solid var(--black);
+    position: sticky;
+    top: -6px;
+    background-image: var(--background-url);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
 .contact__contact-form {
     height: 500px;
 }
