@@ -26,7 +26,7 @@ const App = () => {
         <About height={height}/>
         <Skills height={height}/>
         <Projects height={height}/>
-        <ContactForm />
+        <ContactForm height={height}/>
       </section>
     </div>
   );

@@ -1,7 +1,7 @@
 import './ContactForm.css';
 import emailjs from 'emailjs-com';
 
-const ContactForm = () => {
+const ContactForm = ({height}) => {
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -16,7 +16,7 @@ const ContactForm = () => {
 
 
     return (
-        <section className="contact">
+        <section className="contact" style={{height: height + 'px'}}>
             <form className="contact__contact-form" onSubmit={sendEmail}>
                 <label className="concact-form__label">Name</label>
                 <input type="text" name="name" />

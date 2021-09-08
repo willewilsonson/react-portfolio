@@ -1,13 +1,22 @@
 .contact {
     border-top: 3px solid var(--black);
     position: sticky;
-    top: -6px;
+    top: -6;
     background-image: var(--background-url);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+    /* opacity: 0.7; */
+    margin: 0 10px;
+    /* box-shadow: 10px 7px 26px -4px; */
 }
 
 .contact__contact-form {
     height: 500px;
+}
+
+.contact__title {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 90px;
 }

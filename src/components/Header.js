@@ -4,12 +4,6 @@ import profileImage from '../william_profile_image.png';
 import wnLogo from '../wn_logo.png';
 
 const Header = ({height}) => {
-    const[toTop, setToTop] = useState(0);
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY < height - 100)
-            setToTop(window.scrollY)
-    });
 
     return (
         <header className="header" style={{height: (height - 150) + 'px'}}>
