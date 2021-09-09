@@ -8,8 +8,10 @@ const ContactForm = ({height}) => {
         emailjs.sendForm(process.env.REACT_APP_SERVICE, process.env.REACT_APP_TEMPLATE, e.target, process.env.REACT_APP_USER)
           .then((result) => {
               console.log(result.text);
+              alert('Message sent!')
           }, (error) => {
               console.log(error.text);
+              alert('Oops... something went wrong, try again!')
           });
         e.target.reset();
       }
@@ -19,13 +21,13 @@ const ContactForm = ({height}) => {
         <section className="contact" style={{height: height + 'px'}}>
             <h1 className="contact__title">Contact</h1>
             <form className="contact__contact-form" onSubmit={sendEmail}>
-                <label className="concact-form__label">Name</label>
+                <label className="concact-form__label">Name:</label>
                 <input type="text" name="name" />
-                <label className="concact-form__label">Email</label>
+                <label className="concact-form__label">Email:</label>
                 <input type="email" name="email" />
-                <label className="concact-form__label">Message</label>
+                <label className="concact-form__label">Message:</label>
                 <textarea name="message" />
-                <input type="submit" value="Send" />
+                <input type="submit" value="Send" id="submit" />
             </form>
         </section>
     )

@@ -17,7 +17,7 @@ const Projects = ({height}) => {
 
 
     return (
-        <section className="projects" style={{height: height + 15 + 'px'}}>
+        <section className="projects" style={{height: height + 135 + 'px'}}>
             <h1 className="projects__title">Projects</h1>
             <div className="projects__wrap">
                 <button className={"projects__button--left"}
