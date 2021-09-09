@@ -6,9 +6,6 @@ const Languages = ({createDots}) => {
     return (
         <ul className="skills__ul">
                 <li className="skills__li">
-                    <h2 className="skills__h2">Languages</h2>
-                </li>
-                <li className="skills__li">
                     <h3 className="skills__h3">JavaScript</h3>
                     {createDots(3)}
                 </li>

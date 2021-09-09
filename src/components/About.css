@@ -17,9 +17,9 @@
     margin-top: 70px;
 }
 
-.about__about-navbar {
+/* .about__about-navbar {
     margin: 0 10px;
-}
+} */
 
 .about-navbar__content {
     display: flex;
@@ -32,7 +32,6 @@
 
 .about-navbar__element {
     width: 100%;
-    border-bottom: 2px solid transparent;
     /* background: var(--black); */
 }
 
