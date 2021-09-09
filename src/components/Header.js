@@ -5,7 +5,7 @@ import wnLogo from '../wn_logo.png';
 const Header = ({height}) => {
 
     return (
-        <header className="header" style={{height: (height) + 'px'}}>
+        <header className="header" style={{height: (height) + 50 + 'px'}}>
             <div className="header__images">
                 <img src={wnLogo} alt="" className="header__logo"></img>
                 <img src={profileImage} alt="" className="header__profile-image"></img>

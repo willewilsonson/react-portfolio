@@ -71,6 +71,20 @@
   @media screen and (min-width: 600px) {
     .header {
       margin-top: 100px;
-      top: 15px;
+    }
+    
+    .header__profile-image {
+        width: 300px;
+    }
+
+    .header__text-wrapper {
+        margin: 10% auto;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .header {
+      width: 80%;
+      margin: 0px auto;
     }
   }
