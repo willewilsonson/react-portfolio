@@ -1,0 +1,14 @@
+.footer {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    box-shadow: var(--sectionShadow);
+    background: var(--black);
+    margin-bottom: 101px;
+    color: #fff;
+}
+
+.footer__text {
+    text-align: center;
+    padding-top: 16px;
+}

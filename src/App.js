@@ -7,6 +7,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 // const height = window.screen.height - 100
 
@@ -27,6 +28,7 @@ const App = () => {
         <Skills height={height}/>
         <Projects height={height}/>
         <ContactForm height={height}/>
+        <Footer />
       </section>
     </div>
   );

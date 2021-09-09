@@ -17,6 +17,7 @@ const ContactForm = ({height}) => {
 
     return (
         <section className="contact" style={{height: height + 'px'}}>
+            <h1 className="contact__title">Contact</h1>
             <form className="contact__contact-form" onSubmit={sendEmail}>
                 <label className="concact-form__label">Name</label>
                 <input type="text" name="name" />
