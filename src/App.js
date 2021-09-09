@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
-// import NavLinks from './components/NavLinks';
+import NavLinks from './components/NavLinks';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -22,7 +22,7 @@ const App = () => {
       <section className="app__section">
         <Navbar height={height}/>
         <Header height={height}/>
-        {/* <NavLinks /> */}
+        <NavLinks />
         <About height={height}/>
         <Skills height={height}/>
         <Projects height={height}/>

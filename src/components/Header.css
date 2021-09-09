@@ -14,13 +14,14 @@
 
 .header__logo {
     width: 100px;
+    margin: 20px auto;
 }
 
 .header__profile-image {
     margin: 20px auto;
     border-radius: 100%;
     height: 280;
-    width: 200px;
+    width: 100px;
     border: 1px solid var(--yellow);
     /* box-shadow: 2px 2px 2px 2px var(--dark); */
     /* animation-name: example;
