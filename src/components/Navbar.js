@@ -33,7 +33,7 @@ const Navbar = ({height}) => {
             </li>
             <li className="navbar__element-left">
                 <button className="navbar__button" id="contact"
-                onClick={() => setActive([4, 0])}
+                onClick={() => setActive([4, -50])}
                 >CONTACT</button>
             </li>
         </ul>
