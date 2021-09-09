@@ -23,11 +23,12 @@ const App = () => {
       <section className="app__section">
         <Navbar height={height}/>
         <Header height={height}/>
-        <NavLinks />
+        {window.innerWidth < 600 ? <NavLinks /> : false}
         <About height={height}/>
         <Skills height={height}/>
         <Projects height={height}/>
         <ContactForm height={height}/>
+        {window.innerWidth > 600 ? <NavLinks /> : false}
         <Footer />
       </section>
     </div>

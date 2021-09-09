@@ -36,5 +36,8 @@
     display: contents;
 }
 
-
-
+@media screen and (min-width: 600px) {
+    .projects {
+      top: 15px;
+    }
+}

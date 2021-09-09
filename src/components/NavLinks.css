@@ -43,3 +43,18 @@
         width: 54px;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .nav-links--bottom {
+        background: #fff;
+        opacity: 0.9;
+        height: 50px;
+        position: static;
+        z-index: 998;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        box-shadow: var(--sectionShadow);
+        margin-top: 50px;
+      }
+  }

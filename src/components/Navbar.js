@@ -6,8 +6,6 @@ const Navbar = ({height}) => {
 
     active[0] === 0 ? window.scroll(0, 0) : window.scroll(0, (active[0] * window.screen.height) - (100 - active[1]));
     
-    
-
     return (
         <nav className="navbar">
         <ul className="navbar__container">

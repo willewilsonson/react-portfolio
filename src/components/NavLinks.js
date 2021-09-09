@@ -7,7 +7,7 @@ import facebookLogo from '../2515845_black and white_dark grey_facebook_icon.png
 const NavLinks = () => {
 
     return (
-    <nav className="nav-links">
+    <nav className={window.innerWidth <= 600 ? 'nav-links' : 'nav-links--bottom'}>
         <div className="nav-links__link-container">
             <a href="mailto: info.williamnordenstad@gmail.com" target="_blank" rel="noreferrer">
                 <img src={gmailLogo} className="nav-links__logo" id="gmailLogo" alt="gmail logo"></img>

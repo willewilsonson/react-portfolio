@@ -140,3 +140,9 @@
   .blue {
     background-color: blue;
   }
+
+  @media screen and (min-width: 600px) {
+    .skills {
+      top: 15px;
+    }
+}
