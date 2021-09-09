@@ -12,7 +12,7 @@ const Header = ({height}) => {
             </div>
             <h3 className="header__greeting">Hello</h3>
             <h1 className="header__name">I'm William</h1>
-            <h3 className="header__description">A fullstack JavaScript developer</h3>
+            <h3 className="header__description">A full stack JavaScript developer</h3>
         </header>
     )
 }
