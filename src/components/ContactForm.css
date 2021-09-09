@@ -18,6 +18,7 @@
     text-align: center;
     margin-top: 0;
     padding-top: 90px;
+    font-weight: var(--titleWeight);
 }
 
 .contact__contact-form {
