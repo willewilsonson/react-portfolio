@@ -3,8 +3,6 @@ import './Projects.css';
 import Card from './Card';
 
 const cardsQuantity = 2;
-const counter = 1;
-
 
 const Projects = ({height}) => {
     const[activeCard, setActiveCard] = useState(1);
