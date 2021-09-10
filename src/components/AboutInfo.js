@@ -1,7 +1,14 @@
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
 import './About.css';
 import texts from '../text/texts.js';
 
 const AboutInfo = ({display}) => {
+    const fadeInAboutTextRef = useRef();
+
+    useEffect(() => {
+        gsap.fromTo(fadeInAboutTextRef.current, { duration: 2, scale: .9, opacity: 0 }, { scale: 1, opacity: 1 })
+    });
 
     const contentToDisplay = () => {
         if(display === 'life') {
@@ -17,7 +24,7 @@ const AboutInfo = ({display}) => {
 
     return(
         <article className="about__info--outer">
-            <div className="about__info--inner">
+            <div className="about__info--inner" ref={fadeInAboutTextRef}>
                 {contentToDisplay()}
             </div>
         </article>
