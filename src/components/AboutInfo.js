@@ -1,16 +1,17 @@
 import './About.css';
+import texts from '../text/texts.js';
 
 const AboutInfo = ({display}) => {
 
     const contentToDisplay = () => {
         if(display === 'life') {
-            return <p>Life</p>;
+            return <p>{texts[0]}</p>;
         }
         if(display === 'education') {
-            return <p>Education</p>;
+            return <p>{texts[1]}</p>;
         }
         if(display === 'experiences') {
-            return <p>Experiences</p>;
+            return <p>{texts[2]}]</p>;
         }
     };
 

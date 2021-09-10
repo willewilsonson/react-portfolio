@@ -32,6 +32,10 @@
     color: #fff;
 }
 
+.navbar__button:hover {
+    border-bottom: 1px solid;
+}
+
 @media screen and (min-width: 600px) {
     .navbar {
         top: 0;

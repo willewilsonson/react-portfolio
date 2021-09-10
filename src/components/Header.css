@@ -87,4 +87,8 @@
       width: 80%;
       margin: 0px auto;
     }
+
+    .header__images {
+        background: transparent;
+    }
   }
