@@ -71,6 +71,7 @@
   @media screen and (min-width: 600px) {
     .header {
       margin-top: 100px;
+      top: 100px;
     }
     
     .header__profile-image {
@@ -84,7 +85,7 @@
 
   @media screen and (min-width: 1200px) {
     .header {
-      width: 80%;
+      /* width: 80%; */
       margin: 0px auto;
     }
 

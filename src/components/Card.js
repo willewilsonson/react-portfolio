@@ -16,9 +16,9 @@ const Card = ({activeCard, direction}) => {
 
     const slideDirection = () => {
         if (direction === true) {
-            return 500;
+            return 1500;
         }
-        return -500;
+        return -1500;
     }
 
     useEffect(() => {

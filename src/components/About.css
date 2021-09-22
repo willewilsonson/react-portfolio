@@ -4,7 +4,7 @@
     background-image: var(--background-url);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: 120%;
     box-shadow: var(--sectionShadow);
 }
 
@@ -96,7 +96,9 @@
 
 @media screen and (min-width: 1200px) {
     .about {
-      width: 80%;
+      /* width: 80%; */
+      background-image: var(--background-url-landscape);
+      background-size: 100%;
       margin: 0 auto;
     }
 
