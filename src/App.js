@@ -24,9 +24,9 @@ const App = () => {
         <Navbar height={height}/>
         <Header height={height}/>
         {window.innerWidth < 600 ? <NavLinks /> : false}
-        <About height={height}/>
-        <Skills height={height}/>
         <Projects height={height}/>
+        <Skills height={height}/>
+        <About height={height}/>
         <ContactForm height={height}/>
         {window.innerWidth > 600 ? <NavLinks /> : false}
         <Footer />

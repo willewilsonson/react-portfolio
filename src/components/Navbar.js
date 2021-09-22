@@ -18,19 +18,19 @@ const Navbar = ({height}) => {
                 >TOP</button>
             </li>
             <li className="navbar__element-left">
-                <button className="navbar__button" id="about"
-                onClick={() => setActive([1, scrollAmount - 50])}
-                >ABOUT</button>
+                <button className="navbar__button" id="portfolio"
+                onClick={() => setActive([1, scrollAmount - 100])}
+                >PROJECTS</button>
             </li>
             <li className="navbar__element-left">
                 <button className="navbar__button" id="skills"
-                onClick={() => setActive([2, scrollAmount])}
+                onClick={() => setActive([2, scrollAmount - 100])}
                 >SKILLS</button>
             </li>
             <li className="navbar__element-left">
-                <button className="navbar__button" id="portfolio"
-                onClick={() => setActive([3, scrollAmount])}
-                >PROJECTS</button>
+                <button className="navbar__button" id="about"
+                onClick={() => setActive([3, scrollAmount - 50])}
+                >ABOUT</button>
             </li>
             <li className="navbar__element-left">
                 <button className="navbar__button" id="contact"
