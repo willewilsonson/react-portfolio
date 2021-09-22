@@ -16,37 +16,37 @@ const BackEnd = ({createDots}) => {
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">REACT</h3>
                     {createDots(3)} */}
-                    <img class='skills__image' src={NodejsLogo}></img>
+                    <img alt='Node JS logo' className='skills__image' src={NodejsLogo}></img>
                     <p>Node JS</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">REACT</h3>
                     {createDots(3)} */}
-                    <img class='skills__image' src={ExpressjsLogo}></img>
+                    <img alt='Express JS logo' className='skills__image' src={ExpressjsLogo}></img>
                     <p>Express JS</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">REACT</h3>
                     {createDots(3)} */}
-                    <img class='skills__image' src={RestapiLogo}></img>
+                    <img alt='Rest API logo' className='skills__image' src={RestapiLogo}></img>
                     <p>Rest API</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">REACT</h3>
                     {createDots(3)} */}
-                    <img class='skills__image' src={GraphqlLogo}></img>
+                    <img alt='GraphQL logo' className='skills__image' src={GraphqlLogo}></img>
                     <p>GrapQL</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">REACT</h3>
                     {createDots(3)} */}
-                    <img class='skills__image' src={MongodbLogo}></img>
+                    <img alt='MonboDB logo' className='skills__image' src={MongodbLogo}></img>
                     <p>MongoDB</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">REACT</h3>
                     {createDots(3)} */}
-                    <img class='skills__image' src={PostgresqlLogo}></img>
+                    <img alt='PostgreSQL logo' className='skills__image' src={PostgresqlLogo}></img>
                     <p>PostgreSQL</p>
                 </li>
             </ul>

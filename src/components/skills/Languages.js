@@ -13,31 +13,31 @@ const Languages = ({createDots}) => {
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">DOM-MANIPULATION</h3>
                     {createDots(2)} */}
-                    <img class='skills__image' src={VscodeLogo}></img>
+                    <img alt='VScode logo' className='skills__image' src={VscodeLogo}></img>
                     <p>Visual Studio Code</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">DOM-MANIPULATION</h3>
                     {createDots(2)} */}
-                    <img class='skills__image' src={AtomLogo}></img>
+                    <img alt='Atom logo' className='skills__image' src={AtomLogo}></img>
                     <p>Atom</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">DOM-MANIPULATION</h3>
                     {createDots(2)} */}
-                    <img class='skills__image' src={DockerLogo}></img>
+                    <img alt='Docker logo' className='skills__image' src={DockerLogo}></img>
                     <p>Docker</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">DOM-MANIPULATION</h3>
                     {createDots(2)} */}
-                    <img class='skills__image' src={GithubLogo}></img>
+                    <img alt='Github logo' className='skills__image' src={GithubLogo}></img>
                     <p>Github</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">DOM-MANIPULATION</h3>
                     {createDots(2)} */}
-                    <img class='skills__image' src={GitLogo}></img>
+                    <img alt='Git logo' className='skills__image' src={GitLogo}></img>
                     <p>Git</p>
                 </li>
             </ul>

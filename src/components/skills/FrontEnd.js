@@ -14,37 +14,37 @@ const FrontEnd = ({createDots}) => {
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">REACT</h3>
                     {createDots(3)} */}
-                    <img class='skills__image' src={ReactLogo}></img>
+                    <img alt='React JS logo' className='skills__image' src={ReactLogo}></img>
                     <p>React JS</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">GATSBY</h3>
                     {createDots(1)} */}
-                    <img class='skills__image' src={HtmlLogo}></img>
+                    <img alt='HTML5 logo' className='skills__image' src={HtmlLogo}></img>
                     <p>HTML5</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">CSS(BEM)</h3>
                     {createDots(3)} */}
-                    <img class='skills__image' src={CssLogo}></img>
+                    <img alt='CSS logo' className='skills__image' src={CssLogo}></img>
                     <p>CSS</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">REDUX</h3>
                     {createDots(2)} */}
-                    <img class='skills__image' src={ReduxLogo}></img>
+                    <img alt='Redux logo' className='skills__image' src={ReduxLogo}></img>
                     <p>Redux</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">DOM-MANIPULATION</h3>
                     {createDots(2)} */}
-                    <img class='skills__image' src={WebpackLogo}></img>
+                    <img alt='Webpack logo' className='skills__image' src={WebpackLogo}></img>
                     <p>Webpack</p>
                 </li>
                 <li className="skills__li">
                     {/* <h3 className="skills__h3">DOM-MANIPULATION</h3>
                     {createDots(2)} */}
-                    <img class='skills__image' src={JqueryLogo}></img>
+                    <img alt='Jquery logo' className='skills__image' src={JqueryLogo}></img>
                     <p>Jquery</p>
                 </li>
             </ul>
