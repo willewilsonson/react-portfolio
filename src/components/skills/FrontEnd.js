@@ -4,6 +4,7 @@ import CssLogo from '../../css_logo.png';
 import ReduxLogo from '../../redux_logo.png';
 import WebpackLogo from '../../webpack_logo.png';
 import HtmlLogo from '../../html5_logo.png';
+import JqueryLogo from '../../jquery_logo.png';
 
 
 const FrontEnd = ({createDots}) => {
@@ -39,6 +40,12 @@ const FrontEnd = ({createDots}) => {
                     {createDots(2)} */}
                     <img class='skills__image' src={WebpackLogo}></img>
                     <p>Webpack</p>
+                </li>
+                <li className="skills__li">
+                    {/* <h3 className="skills__h3">DOM-MANIPULATION</h3>
+                    {createDots(2)} */}
+                    <img class='skills__image' src={JqueryLogo}></img>
+                    <p>Jquery</p>
                 </li>
             </ul>
     )
