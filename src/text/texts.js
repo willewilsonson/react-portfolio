@@ -4,7 +4,7 @@ const texts = [
 
     In addition to my previous employments, I have for several years run the event company NOPH Events together with a colleague. In this industry, it is very much about finding solutions, being creative and flexible, which has suited me as I like to see opportunities in challenges.
 
-    As a person, I am active and spend a lot of time with family and friends where football, golf and paddle are some of the activities we like to spend together.`,
+    As a person, I am active and spend a lot of time with family and friends where football, golf and traveling are some of the activities we like to spend together.`,
 
     `Full Stack JavaScript - School of Applied
     Technology </salt>
