@@ -14,12 +14,12 @@ const Card = ({activeCard, direction}) => {
         return slideCard;
     };
 
-    const slideDirection = () => {
-        if (direction === true) {
-            return 1500;
-        }
-        return -1500;
-    }
+    // const slideDirection = () => {
+    //     if (direction === true) {
+    //         return 1500;
+    //     }
+    //     return -1500;
+    // }
 
     useEffect(() => {
         gsap.fromTo(slideCard.current, { x: 0, scale: 1, opacity: 0 }, { duration: 1.5, x: 0, scale: 1, opacity: 1, ease: 'power4' });
