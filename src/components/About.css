@@ -1,10 +1,11 @@
 .about {
     position: sticky;
     top: 0;
-    background-image: var(--background-url);
+    /* background-image: var(--background-url);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 120%;
+    background-size: 120%; */
+    background-color: var(--background);
     box-shadow: var(--sectionShadow);
 }
 
@@ -96,7 +97,7 @@
 @media screen and (min-width: 1200px) {
     .about {
       /* width: 80%; */
-      background-image: var(--background-url-landscape);
+      /* background-image: var(--background-url-landscape); */
       background-size: 100%;
       margin: 0 auto;
     }

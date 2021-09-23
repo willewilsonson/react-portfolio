@@ -7,6 +7,7 @@ import HtmlLogo from '../../html5_logo.png';
 import JqueryLogo from '../../jquery_logo.png';
 
 
+
 const FrontEnd = ({createDots}) => {
 
     return (

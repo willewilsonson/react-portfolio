@@ -7,6 +7,8 @@
   --pink: #D3AFAB;
   --green: #837D53;
   --yellow: #D3CFAB;
+  --blue: #b5b5e0;
+  --background: rgb(58, 54, 54);
   --background-url: url(https://images.unsplash.com/photo-1498015583783-4abcab4a760a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGNsb3VkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
   --background-url-landscape: url(https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
   --sectionShadow: 0px -4px 5px -7px;;
@@ -20,13 +22,14 @@ html {
 
 body {
   font-family: 'Khula', sans-serif;
-  background-image: var(--background-url);
+  /* background-image: var(--background-url);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 120%;
-  /* background-color: var(--dark); */
+  background-size: 120%; */
+  background-color: var(--background);
   margin: 0;
   overflow-x: hidden;
+  color: var(--blue);
 }
 
 button {
@@ -38,7 +41,7 @@ button {
     margin-top: 100px;
   }
   body {
-    background-image: var(--background-url-landscape);
+    /* background-image: var(--background-url-landscape); */
     background-size: 100%;
   }
 }

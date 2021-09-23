@@ -5,12 +5,13 @@
     color: var(--light);
     position: sticky;
     top: 0;
+    background: var(--background);
 }
 
 .header__images {
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(#fff, transparent);
+    /* background-image: linear-gradient(#fff, transparent); */
 }
 
 .header__logo {

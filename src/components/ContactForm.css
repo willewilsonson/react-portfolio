@@ -1,10 +1,11 @@
 .contact {
     position: sticky;
-    top: 0;
-    background-image: var(--background-url);
+    top: 25px;
+    /* background-image: var(--background-url);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 120%;
+    background-size: 120%; */
+    background-color: var(--background);
     box-shadow: var(--sectionShadow);
     padding-bottom: 160px;
 
@@ -48,7 +49,7 @@
 @media screen and (min-width: 1200px) {
     .contact {
       /* width: 80%; */
-      background-image: var(--background-url-landscape);
+      /* background-image: var(--background-url-landscape); */
       background-size: 100%;
       margin: 0 auto;
     }
