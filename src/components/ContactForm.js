@@ -21,12 +21,9 @@ const ContactForm = ({height}) => {
         <section className="contact" style={{height: 500 + 'px'}}>
             <h1 className="contact__title">Contact</h1>
             <form className="contact__contact-form" onSubmit={sendEmail}>
-                <label className="concact-form__label">Name:</label>
-                <input type="text" name="name" />
-                <label className="concact-form__label">Email:</label>
-                <input type="email" name="email" />
-                <label className="concact-form__label">Message:</label>
-                <textarea name="message" />
+                <input type="text" name="name" placeholder='Name'/>
+                <input type="email" name="email" placeholder='Email'/>
+                <textarea name="message" placeholder='Message...'/>
                 <input type="submit" value="Send" id="submit" />
             </form>
         </section>

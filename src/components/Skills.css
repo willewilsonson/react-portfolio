@@ -16,6 +16,7 @@
     text-align: center;
     margin-top: 0;
     padding-top: 90px;
+    font-size: var(--titleFontSize);
 }
 
 .skills-navbar {

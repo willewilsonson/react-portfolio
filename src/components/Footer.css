@@ -5,7 +5,7 @@
     box-shadow: var(--sectionShadow);
     background: var(--black);
     margin-bottom: 101px;
-    color: #fff;
+    color: var(--blue);
 }
 
 .footer__text {

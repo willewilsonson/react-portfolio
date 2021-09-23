@@ -22,7 +22,7 @@ const Card = ({activeCard, direction}) => {
     }
 
     useEffect(() => {
-        gsap.fromTo(slideCard.current, { duration: 2, x: slideDirection(), scale: .5, opacity: 0 }, { x: 0, scale: 1, opacity: 1 });
+        gsap.fromTo(slideCard.current, { x: 0, scale: 1, opacity: 0 }, { duration: 1.5, x: 0, scale: 1, opacity: 1, ease: 'power4' });
     });
 
     return (

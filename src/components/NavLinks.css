@@ -1,5 +1,5 @@
 .nav-links {
-    background: #fff;
+    background: var(--blue);
     opacity: 0.9;
     height: 50px;
     position: sticky;
@@ -46,7 +46,7 @@
 
 @media screen and (min-width: 600px) {
     .nav-links--bottom {
-        background: #fff;
+        background: var(--blue);
         opacity: 0.9;
         height: 50px;
         position: static;

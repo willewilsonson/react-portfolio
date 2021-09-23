@@ -7,7 +7,7 @@
     background-size: 120%; */
     background-color: var(--background);
     box-shadow: var(--sectionShadow);
-    padding-bottom: 160px;
+    padding-bottom: 300px;
 
 }
 
@@ -16,6 +16,7 @@
     margin-top: 0;
     padding-top: 90px;
     font-weight: var(--titleWeight);
+    font-size: var(--titleFontSize);
 }
 
 .contact__contact-form {
@@ -24,6 +25,8 @@
     display: flex;
     flex-direction: column;
     margin: 20px auto;
+    font-weight: var(--titleWeight);
+    font-family: inherit;
 }
 
 .contact__contact-form input, textarea {
@@ -35,6 +38,10 @@ input:focus,
 textarea:focus {
     outline: none;
     box-shadow: 0px 0px 2px #fff;
+}
+
+input {
+    margin-bottom: 40px;
 }
 
 .contact__contact-form label {

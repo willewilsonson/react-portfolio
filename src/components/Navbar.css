@@ -29,7 +29,7 @@
 .navbar__button {
     background: transparent;
     border: none;
-    color: #fff;
+    color: var(--blue);
 }
 
 .navbar__button:hover {

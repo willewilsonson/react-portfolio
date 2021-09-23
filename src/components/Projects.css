@@ -15,11 +15,13 @@
     text-align: center;
     margin-top: 0;
     padding-top: 90px;
+    font-size: var(--titleFontSize);
 }
 
 .projects__wrap {
     display: flex;
     flex-direction: row;
+    margin: 15% auto;
 }
 
 .projects__button--left, .projects__button--right {
@@ -30,7 +32,14 @@
     right: 0;
     left: 0;
     border: none;
-    background: radial-gradient(#fff, transparent);
+    background:transparent;
+    font-size: 2em;
+    transition: transform .2s ease-in-out;
+}
+
+.projects__button--left:hover, .projects__button--right:hover {
+    color: #fff;
+    transform: scaleX(2);
 }
 
 .show-button {
@@ -49,5 +58,9 @@
       /* background-image: var(--background-url-landscape); */
       background-size: 100%;
       margin: 0 auto;
+    }
+
+    .projects__wrap {
+        margin: 10% auto;
     }
   }
