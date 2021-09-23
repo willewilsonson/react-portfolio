@@ -8,8 +8,6 @@ import Languages from './skills/Languages';
 const SkillsInfo = ({displaySkills}) => {
     const fadeInLogos = useRef();
 
-    gsap.fromTo(fadeInLogos.current, {duration: 5, opacity: 0}, {opacity: 1})
-
     const createDots = (number) => {
         const dots = ['0', '1', '2'];
 
@@ -27,6 +25,10 @@ const SkillsInfo = ({displaySkills}) => {
             return <Languages createDots={createDots}/>;
         }
     };
+    
+    if (fadeInLogos.current) {
+        gsap.fromTo(fadeInLogos.current, {opacity: 0}, {opacity: 1, duration: 1});
+    }
 
 
     return (
