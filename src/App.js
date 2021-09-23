@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   const[height, setHeight] = useState(window.screen.height - 150);
+  const scroller = useRef();
 
   window.addEventListener('resize', () => {
     setHeight(window.screen.height - 150)
@@ -20,7 +21,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <section className="app__section">
+      <section className="app__section" ref={scroller}>
         <Navbar height={height}/>
         <Header height={height}/>
         {window.innerWidth < 600 ? <NavLinks /> : false}

@@ -29,7 +29,6 @@
 .contact__contact-form input, textarea {
     background: rgb(78 72 72);
     border: none;
-    border-radius: 12px;
 }
 
 input:focus,
