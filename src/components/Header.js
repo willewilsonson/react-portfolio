@@ -1,35 +1,30 @@
-// import React, { useRef } from 'react';
-// import { gsap } from 'gsap';
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import './Header.css';
-// import profileImage from '../william_profile_image.png';
-// import wnLogo from '../wn_logo.png';
-// import { useEffect } from 'react';
+
 
 const Header = ({height}) => {
-    // const header__logo = useRef();
-    // const header__profile_image = useRef();
-    // const header__greeting = useRef();
-    // const header__name = useRef();
-    // const header__description = useRef();
-    // const timeline = gsap.timeline({ defaults: { duration: 1.5 } });
+    const box1 = useRef();
 
-    // useEffect(() => {
-    //     timeline
-    //         .fromTo(header__logo.current, { opacity: 0, }, { opacity: 1, })
-    //         .fromTo(header__profile_image.current, { opacity: 0, }, { opacity: 1, }, '<')
-    //         .fromTo(header__greeting.current, { scale: .7, x: -75, opacity: 0, }, { scale: 1, x: 0, opacity: 1, }, '<')
-    //         .fromTo(header__name.current, { scale: .7, x: -75, opacity: 0, }, { scale: 1, x: -0, opacity: 1, }, '< .5')
-    //         .fromTo(header__description.current, { scale: .7, x: -75, opacity: 0, }, { scale: 1, x: -0, opacity: 1, }, '< .5')
+    gsap.registerPlugin(ScrollTrigger);
+    
+    useEffect(() => {
+        gsap.to(box1.current, {
+            opacity: 0,
+                scrollTrigger: {
+                    trigger: box1.current,
+                    markers: true,
+                    start: '-100px',
+                    end: '100% 50%',
+                    scrub: true
+                }
+        })
+    });
 
-
-    // });
 
     return (
-        <header className="header" style={{height: (height) + 50 + 'px'}}>
-            {/* <div className="header__images">
-                <img src={wnLogo} alt="" className="header__logo" ref={header__logo}></img>
-                <img src={profileImage} alt="" className="header__profile-image" ref={header__profile_image}></img>
-            </div> */}
+        <header className="header" style={{height: (height)}} ref={box1}>
             <div className='header__box--1'></div>
             <div className="header__text-wrapper">
                 <h3 className="header__greeting">Hello</h3>
