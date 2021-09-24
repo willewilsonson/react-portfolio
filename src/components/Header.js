@@ -30,6 +30,7 @@ const Header = ({height}) => {
                 <img src={wnLogo} alt="" className="header__logo" ref={header__logo}></img>
                 <img src={profileImage} alt="" className="header__profile-image" ref={header__profile_image}></img>
             </div> */}
+            <div className='header__box--1'></div>
             <div className="header__text-wrapper">
                 <h3 className="header__greeting">Hello</h3>
                 <div className='header__name-wrapper'>
@@ -38,6 +39,8 @@ const Header = ({height}) => {
                 </div>
                 <h3 className="header__description">A full stack JavaScript developer</h3>
             </div>
+            <div className='header__box--2'></div>
+            <div className='header__box--3'></div>
         </header>
     )
 }
