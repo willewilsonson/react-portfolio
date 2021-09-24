@@ -11,8 +11,6 @@ const Projects = ({height}) => {
     const[direction, setDirection] = useState(false);
     const box2 = useRef();
 
-    const t1 = gsap.timeline();
-
     gsap.registerPlugin(ScrollTrigger);
     
     useEffect(() => {
@@ -41,9 +39,6 @@ const Projects = ({height}) => {
         }
         setActiveCard(activeCard +1 );
     };
-
-    console.log('activecard ', activeCard);
-
 
     return (
         <section className="projects" style={{height: height}} ref={box2}>
