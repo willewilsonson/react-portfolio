@@ -6,7 +6,7 @@
     background-attachment: fixed;
     background-size: 120%; */
     background-color: var(--background);
-    box-shadow: var(--sectionShadow);
+    /* box-shadow: var(--sectionShadow); */
 }
 
 .about__title {

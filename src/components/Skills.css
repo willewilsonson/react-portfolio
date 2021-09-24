@@ -9,7 +9,7 @@
     background-color: var(--background);
     /* opacity: 0.7; */
     /* margin: 0 10px; */
-    box-shadow: var(--sectionShadow);
+    /* box-shadow: var(--sectionShadow); */
 }
 
 .skills__title {

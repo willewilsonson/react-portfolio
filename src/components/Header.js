@@ -14,7 +14,6 @@ const Header = ({height}) => {
             opacity: 0,
                 scrollTrigger: {
                     trigger: box1.current,
-                    markers: true,
                     start: '-100px',
                     end: '100% 50%',
                     scrub: true
@@ -25,7 +24,7 @@ const Header = ({height}) => {
 
     return (
         <header className="header" style={{height: (height)}} ref={box1}>
-            <div className='header__box--1'></div>
+            {/* <div className='header__box--1'></div> */}
             <div className="header__text-wrapper">
                 <h3 className="header__greeting">Hello</h3>
                 <div className='header__name-wrapper'>
@@ -34,8 +33,8 @@ const Header = ({height}) => {
                 </div>
                 <h3 className="header__description">A full stack JavaScript developer</h3>
             </div>
-            <div className='header__box--2'></div>
-            <div className='header__box--3'></div>
+            {/* <div className='header__box--2'></div> */}
+            {/* <div className='header__box--3'></div> */}
         </header>
     )
 }

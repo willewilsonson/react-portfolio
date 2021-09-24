@@ -1,7 +1,25 @@
+import React, { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import './ContactForm.css';
 import emailjs from 'emailjs-com';
 
 const ContactForm = ({height}) => {
+    const box5 = useRef();
+
+    gsap.registerPlugin(ScrollTrigger);
+    
+    useEffect(() => {
+        gsap.to(box5.current, {
+            opacity: 0,
+                scrollTrigger: {
+                    trigger: box5.current,
+                    start: '-100px',
+                    end: '100% 50%',
+                    scrub: true,
+                }
+        })
+    });
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -18,7 +36,7 @@ const ContactForm = ({height}) => {
 
 
     return (
-        <section className="contact" style={{height: 500 + 'px'}}>
+        <section className="contact" style={{height: 500 + 'px'}} ref={box5}>
             <h1 className="contact__title">Contact</h1>
             <form className="contact__contact-form" onSubmit={sendEmail}>
                 <input type="text" name="name" placeholder='Name'/>

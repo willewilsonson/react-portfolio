@@ -6,8 +6,8 @@
     background-attachment: fixed;
     background-size: 120%; */
     background-color: var(--background);
-    box-shadow: var(--sectionShadow);
-    padding-bottom: 300px;
+    /* box-shadow: var(--sectionShadow); */
+    /* padding-bottom: 300px; */
 
 }
 
