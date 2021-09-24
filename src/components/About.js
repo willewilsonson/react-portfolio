@@ -19,7 +19,7 @@ const About = ({height}) => {
                     trigger: box4.current,
                     start: '-100px',
                     end: '100% 50%',
-                    scrub: true
+                    scrub: 1
                 }
         })
     });

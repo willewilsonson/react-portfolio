@@ -16,7 +16,7 @@ const ContactForm = ({height}) => {
                     trigger: box5.current,
                     start: '-100px',
                     end: '100% 50%',
-                    scrub: true,
+                    scrub: 1,
                 }
         })
     });
@@ -36,7 +36,7 @@ const ContactForm = ({height}) => {
 
 
     return (
-        <section className="contact" style={{height: 500 + 'px'}} ref={box5}>
+        <section className="contact" style={{height: height}} ref={box5}>
             <h1 className="contact__title">Contact</h1>
             <form className="contact__contact-form" onSubmit={sendEmail}>
                 <input type="text" name="name" placeholder='Name'/>

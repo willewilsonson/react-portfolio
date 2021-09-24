@@ -38,6 +38,14 @@ const Card = ({activeCard, direction}) => {
                 <img ref={activeCardRef(2)} className="card__image" src={hackday} alt="project_todo_image"></img>
                 <footer className="card__card-footer">
                     <a href="https://github.com/willewilsonson/hackday" target="_blank" rel="noreferrer" className="card-footer__link">Code</a>
+                    <a className="card-footer__link no-demo">Demo</a>
+                </footer>
+            </div>
+            <div className={`card-wrapper__card${activeCard === 3 ? ' showCard' : ''}`}>
+                <img ref={activeCardRef(3)} className="card__image" src='' alt="two_weeks_project"></img>
+                <footer className="card__card-footer">
+                    <a href="https://github.com/willewilsonson/hackday" target="_blank" rel="noreferrer" className="card-footer__link">Code</a>
+                    <a href="https://ancient-fjord-02404.herokuapp.com/" target="_blank" rel="noreferrer" className="card-footer__link">Demo</a>
                 </footer>
             </div>
         </article>

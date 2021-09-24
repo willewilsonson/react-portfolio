@@ -49,3 +49,11 @@
     flex-wrap: wrap;
     /* background: #353030; */
 }
+
+.no-demo,
+.no-demo:hover {
+    color: transparent;
+    cursor: default;
+}
+
+

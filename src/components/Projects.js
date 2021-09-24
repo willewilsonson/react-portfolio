@@ -4,12 +4,14 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import './Projects.css';
 import Card from './Card';
 
-const cardsQuantity = 2;
+const cardsQuantity = 3;
 
 const Projects = ({height}) => {
     const[activeCard, setActiveCard] = useState(1);
     const[direction, setDirection] = useState(false);
     const box2 = useRef();
+
+    const t1 = gsap.timeline();
 
     gsap.registerPlugin(ScrollTrigger);
     
@@ -20,7 +22,7 @@ const Projects = ({height}) => {
                     trigger: box2.current,
                     start: '-100px',
                     end: '100% 50%',
-                    scrub: true,
+                    scrub: 1,
                 }
         })
     });

@@ -38,6 +38,12 @@ input:focus,
 textarea:focus {
     outline: none;
     box-shadow: 0px 0px 2px #fff;
+    color: var(--blue);
+}
+
+input,
+textarea {
+    color: var(--blue);
 }
 
 input {
