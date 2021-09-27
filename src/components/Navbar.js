@@ -34,7 +34,7 @@ const Navbar = ({height}) => {
             </li>
             <li className="navbar__element-left">
                 <button className="navbar__button" id="contact"
-                onClick={() => setActive([4, scrollAmountContact + 400])}
+                onClick={() => setActive([4, scrollAmountContact + 300])}
                 >CONTACT</button>
             </li>
         </ul>

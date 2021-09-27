@@ -25,7 +25,7 @@ const About = ({height}) => {
     });
 
     return(
-        <section className="about" style={{height: height + 44 + 'px'}} ref={box4}>
+        <section className="about" style={{height: height + 150 + 'px'}} ref={box4}>
             <h1 className="about__title">About me</h1>
             {/* <AboutNavbar display={display} setDisplay={setDisplay}/> */}
             <AboutInfo display={display} setDisplay={setDisplay}/>
