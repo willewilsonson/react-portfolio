@@ -17,14 +17,14 @@ const Skills = ({height}) => {
                 scrollTrigger: {
                     trigger: box3.current,
                     start: '50%',
-                    end: '100% 50%',
+                    end: '100% 10%',
                     scrub: 1
                 }
         })
     });
 
     return (
-        <section className="skills" style={{height: height}} ref={box3}>
+        <section className="skills" style={{height: height + 150 + 'px'}} ref={box3}>
             <h1 className="skills__title">Skills</h1>
             <SkillsNavbar displaySkills={displaySkills} setDisplaySkills={setDisplaySkills}/>
             <SkillsInfo displaySkills={displaySkills}/>

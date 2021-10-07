@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import './Card.css';
 import todoImage from "../project_todo_image.png";
 import hackday from "../hackday.png";
+import strummr from "../strummr_image.png";
 
 const Card = ({activeCard, direction}) => {
     const slideCard = useRef();
@@ -42,7 +43,7 @@ const Card = ({activeCard, direction}) => {
                 </footer>
             </div>
             <div className={`card-wrapper__card${activeCard === 3 ? ' showCard' : ''}`}>
-                <img ref={activeCardRef(3)} className="card__image" src='' alt="two_weeks_project"></img>
+                <img ref={activeCardRef(3)} className="card__image" src={strummr} alt="two_weeks_project"></img>
                 <footer className="card__card-footer">
                     <a href="https://github.com/mobUndefined21/2-week-project" target="_blank" rel="noreferrer" className="card-footer__link">Code</a>
                     <a href="https://ancient-fjord-02404.herokuapp.com/" target="_blank" rel="noreferrer" className="card-footer__link">Demo</a>

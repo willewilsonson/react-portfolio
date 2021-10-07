@@ -15,7 +15,7 @@ const Header = ({height}) => {
                 scrollTrigger: {
                     trigger: box1.current,
                     start: '100px',
-                    end: '100% 50%',
+                    end: '100% 10%',
                     scrub: true
                 }
         })

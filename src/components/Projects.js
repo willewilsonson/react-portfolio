@@ -19,7 +19,7 @@ const Projects = ({height}) => {
                 scrollTrigger: {
                     trigger: box2.current,
                     start: '100px',
-                    end: '100% 0%',
+                    end: '100% 10%',
                     scrub: 1,
                 }
         })
