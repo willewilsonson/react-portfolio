@@ -12,12 +12,16 @@ import Footer from './components/Footer';
 // const height = window.screen.height - 100
 
 const App = () => {
-  const[height, setHeight] = useState(window.screen.height - 150);
+  const[height, setHeight] = useState("100%");
   const scroller = useRef();
 
-  window.addEventListener('resize', () => {
-    setHeight(window.screen.height - 150)
-  })
+  // const getHeight = () => {
+  //   return window.screen.height < 1200 ? window.screen.height - 150 : false;
+  // };
+
+  // window.addEventListener('resize', () => {
+  //   setHeight(getHeight())
+  // })
 
   return (
     <div className="App">

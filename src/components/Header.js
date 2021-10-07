@@ -12,18 +12,29 @@ const Header = ({height}) => {
     useEffect(() => {
         gsap.to(box1.current, {
             opacity: 0,
+            scale: 0.1,
                 scrollTrigger: {
                     trigger: box1.current,
                     start: '100px',
                     end: '100% 10%',
-                    scrub: true
+                    scrub: true,
+                    toggleActions: "none reset reset reset",
                 }
         })
+        // gsap.to(box1.current, {
+        //     scale: 0.1,
+        //         scrollTrigger: {
+        //             trigger: box1.current,
+        //             start: '100px',
+        //             end: '100% 100px',
+        //             scrub: true
+        //         }
+        // })
     });
 
 
     return (
-        <header className="header" style={{height: (height)}} ref={box1}>
+        <header className="header" id='top-section' style={{height: (height)}} ref={box1}>
             {/* <div className='header__box--1'></div> */}
             <div className="header__text-wrapper">
                 <h3 className="header__greeting">Hello</h3>

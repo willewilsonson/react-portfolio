@@ -15,17 +15,18 @@ const About = ({height}) => {
     useEffect(() => {
         gsap.to(box4.current, {
             opacity: 0,
+            scale: 0.1,
                 scrollTrigger: {
                     trigger: box4.current,
-                    start: '50%',
+                    start: '25%',
                     end: '100% 10%',
-                    scrub: 1
+                    scrub: true,
                 }
         })
     });
 
     return(
-        <section className="about" style={{height: height + 150 + 'px'}} ref={box4}>
+        <section className="about" id='about-section' style={{height: height + 150 + 'px'}} ref={box4}>
             <h1 className="about__title">About me</h1>
             {/* <AboutNavbar display={display} setDisplay={setDisplay}/> */}
             <AboutInfo display={display} setDisplay={setDisplay}/>

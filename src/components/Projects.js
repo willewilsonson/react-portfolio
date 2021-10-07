@@ -16,11 +16,12 @@ const Projects = ({height}) => {
     useEffect(() => {
         gsap.to(box2.current, {
             opacity: 0,
+            scale: 0.1,
                 scrollTrigger: {
                     trigger: box2.current,
                     start: '100px',
                     end: '100% 10%',
-                    scrub: 1,
+                    scrub: 0,
                 }
         })
     });
@@ -41,7 +42,7 @@ const Projects = ({height}) => {
     };
 
     return (
-        <section className="projects" style={{height: height}} ref={box2}>
+        <section className="projects" id='portfolio-section' style={{height: height}} ref={box2}>
             <h1 className="projects__title">Projects</h1>
             <div className="projects__wrap">
                 <button className={"projects__button--left"}

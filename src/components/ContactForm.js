@@ -11,7 +11,7 @@ const ContactForm = ({height}) => {
     
     useEffect(() => {
         gsap.to(box5.current, {
-            opacity: 0,
+            opacity: 1,
                 scrollTrigger: {
                     trigger: box5.current,
                     start: '-100px',
@@ -36,7 +36,7 @@ const ContactForm = ({height}) => {
 
 
     return (
-        <section className="contact" style={{height: height}} ref={box5}>
+        <section className="contact" id='contact-section' style={{height: height}} ref={box5}>
             <h1 className="contact__title">Contact</h1>
             <form className="contact__contact-form" onSubmit={sendEmail}>
                 <input type="text" name="name" placeholder='Name'/>

@@ -92,7 +92,7 @@
 
 .header__text-wrapper {
     margin: 30% auto;
-    font-size: 2em;
+    font-size: 4vh;
     background: #353030;
     border-top: solid 3px var(--blue);
     border-bottom: solid 3px var(--blue);
@@ -172,17 +172,23 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    .header {
-      /* width: 80%; */
-      margin: 0px auto;
-    }
-
-    .header__text-wrapper {
-        margin: 15% auto;
-    }
-
-    .header__images {
-        background: transparent;
-    }
+@media screen and (min-width: 850px) {
+  .header__text-wrapper {
+    font-size: 5vh;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    /* width: 80%; */
+    margin: 0px auto;
+  }
+
+  .header__text-wrapper {
+      margin: 15% auto;
+  }
+
+  .header__images {
+      background: transparent;
+  }
+}
