@@ -18,8 +18,8 @@ const Projects = ({height}) => {
             opacity: 0,
                 scrollTrigger: {
                     trigger: box2.current,
-                    start: '-100px',
-                    end: '100% 50%',
+                    start: '100px',
+                    end: '100% 0%',
                     scrub: 1,
                 }
         })

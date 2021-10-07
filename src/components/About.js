@@ -17,7 +17,7 @@ const About = ({height}) => {
             opacity: 0,
                 scrollTrigger: {
                     trigger: box4.current,
-                    start: '-100px',
+                    start: '50%',
                     end: '100% 50%',
                     scrub: 1
                 }

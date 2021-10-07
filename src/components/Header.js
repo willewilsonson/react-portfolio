@@ -14,7 +14,7 @@ const Header = ({height}) => {
             opacity: 0,
                 scrollTrigger: {
                     trigger: box1.current,
-                    start: '-100px',
+                    start: '100px',
                     end: '100% 50%',
                     scrub: true
                 }
